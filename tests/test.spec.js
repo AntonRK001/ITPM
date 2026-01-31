@@ -23,138 +23,143 @@ test("Tamil Transliteration - Sequential Tests", async ({ page }) => {
     // ===== SHORT (≤ 30 chars) =====
     {
       id: "Pos_Fun_0001",
-      input: "vanakkam, eppadi irukeenga?",
-      expected: "வணக்கம், எப்படி இருக்கீங்க?",
+      input: "vanakkam, eppadi irukeenga? ",
+      expected: "வணக்கம், எப்படி இருக்கீங்க? ",
     },
     {
       id: "Pos_Fun_0002",
-      input: "konjam udhavi pannuveenga?",
-      expected: "கொஞ்சம் உதவி பண்ணுவீங்க?",
+      input: "konjam udhavi pannuveenga? ",
+      expected: "கொஞ்சம் உதவி பண்ணுவீங்க? ",
     },
     {
       id: "Pos_Fun_0003",
-      input: "seekiram vaa!",
-      expected: "சீக்கிரம் வா!",
+      input: "seekiram vaa! ",
+      expected: "சீக்கிரம் வா! ",
     },
     {
       id: "Pos_Fun_0004",
-      input: "naan ippo varala.",
-      expected: "நான் இப்போ வரல.",
+      input: "naan ippo varala. ",
+      expected: "நான் இப்போ வரல. ",
     },
     {
       id: "Pos_Fun_0006",
-      input: "sari sari, naan varen.",
-      expected: "சரி சரி, நான் வரேன்.",
+      input: "sari sari, naan varen. ",
+      expected: "சரி சரி, நான் வரேன். ",
     },
     {
       id: "Pos_Fun_0007",
-      input: "naan netru veetukku ponen.",
-      expected: "நான் நேற்று வீட்டுக்கு போனேன்.",
+      input: "naan netru veetukku ponen. ",
+      expected: "நான் நேற்று வீட்டுக்கு போனேன். ",
     },
     {
       id: "Pos_Fun_0008",
-      input: "nee naalai varuviyaa?",
-      expected: "நீ நாளை வருவியா?",
+      input: "nee naalai varuviyaa? ",
+      expected: "நீ நாளை வருவியா? ",
     },
     {
       id: "Pos_Fun_0009",
-      input: "avanga innaiku varamaattaanga.",
-      expected: "அவங்க இன்னைக்கு வரமாட்டாங்க.",
+      input: "avanga innaiku varamaattaanga. ",
+      expected: "அவங்க இன்னைக்கு வரமாட்டாங்க. ",
     },
     {
       id: "Pos_Fun_0013",
-      input: "naan inge irukken.",
-      expected: "நான் இங்கே இருக்கேன்.",
+      input: "naan inge irukken. ",
+      expected: "நான் இங்கே இருக்கேன். ",
     },
     {
       id: "Pos_Fun_0014",
-      input: "naanga serndhu saapidurom.",
-      expected: "நாங்க சேர்ந்து சாப்பிடுறோம்.",
+      input: "naanga serndhu saapidurom. ",
+      expected: "நாங்க சேர்ந்து சாப்பிடுறோம். ",
     },
     {
       id: "Pos_Fun_0015",
-      input: "ava nethu pesala.",
-      expected: "அவ நேத்து பேசல.",
+      input: "ava nethu pesala. ",
+      expected: "அவ நேத்து பேசல. ",
     },
     {
       id: "Pos_Fun_0019",
-      input: "nee naalaikku varuva, sariyaa?",
-      expected: "நீ நாளைக்கு வருவா, சரியா?",
+      input: "nee naalaikku varuva, sariyaa? ",
+      expected: "நீ நாளைக்கு வருவா, சரியா? ",
     },
     {
       id: "Pos_Fun_0020",
-      input: "idhu atha vida nalladhu.",
-      expected: "இது அத விட நல்லது.",
+      input: "idhu atha vida nalladhu. ",
+      expected: "இது அத விட நல்லது. ",
+    },
+    {
+      id: "Pos_Fun_0025",
+      input: "Avan nalla podiyan. ",
+      expected: "அவன் நல்ல பொடியன். ",
     },
     {
       id: "Neg_Fun_0001",
-      input: "Hi, how are you today?",
-      expected: "ஹாய், இன்று எப்படி இருக்கிறீர்கள்?",
+      input: "Hi, how are you today? ",
+      expected: "ஹாய், இன்று எப்படி இருக்கிறீர்கள்? ",
     },
     {
       id: "Neg_Fun_0002",
-      input: "pls hlp me asap!",
-      expected: "தயவு செய்து எனக்கு உடனே உதவி செய்யுங்கள்!",
+      input: "pls hlp me asap! ",
+      expected: "தயவு செய்து எனக்கு உடனே உதவி செய்யுங்கள்! ",
     },
     {
       id: "Neg_Fun_0005",
-      input: "naan p@ssw0rd marandhuten.",
-      expected: "நான் கடவுச்சொல்லை மறந்துவிட்டேன்.",
+      input: "naan p@ssw0rd marandhuten. ",
+      expected: "நான் கடவுச்சொல்லை மறந்துவிட்டேன். ",
     },
     {
       id: "Pos_UI_0001",
-      input: "naan veetukku poren",
-      expected: "நான் வீட்டுக்கு போறேன்",
+      input: "naan veetukku poren ",
+      expected: "நான் வீட்டுக்கு போறேன் ",
     },
 
     // ===== MEDIUM (31–299 chars) =====
     {
       id: "Pos_Fun_0005",
-      input: "naan veetukku poren, aana innaiku mazhai peiyudhu.",
-      expected: "நான் வீட்டுக்கு போறேன், ஆனா இன்னைக்கு மழை பெய்யுது.",
+      input: "naan veetukku poren, aana innaiku mazhai peiyudhu. ",
+      expected: "நான் வீட்டுக்கு போறேன், ஆனா இன்னைக்கு மழை பெய்யுது. ",
     },
     {
       id: "Pos_Fun_0010",
-      input: "nee seekiram mudichaa, naama udane veliya pogalaam.",
-      expected: "நீ சீக்கிரம் முடிச்சா, நாம உடனே வெளிய போகலாம்.",
+      input: "nee seekiram mudichaa, naama udane veliya pogalaam. ",
+      expected: "நீ சீக்கிரம் முடிச்சா, நாம உடனே வெளிய போகலாம். ",
     },
     {
       id: "Pos_Fun_0011",
-      input: "naan velaiya mudikkala, eennaa romba kalaippaa irundhuchu.",
-      expected: "நான் வேலைய முடிக்கல, ஏன்னா ரொம்ப களைப்பா இருந்துச்சு.",
+      input: "naan velaiya mudikkala, eennaa romba kalaippaa irundhuchu. ",
+      expected: "நான் வேலைய முடிக்கல, ஏன்னா ரொம்ப களைப்பா இருந்துச்சு. ",
     },
     {
       id: "Pos_Fun_0012",
       input:
-        "Enkeyoo paartha japakam, unnai naan netru munthinam kanavil kanden.",
+        "Enkeyoo paartha jaapakam, unnai naan netru munthinam kanavil kanden. ",
       expected:
-        "எங்கேயோ பார்த்த ஜாபகம், உன்னை நான் நேற்று முன்தினம் கனவில் கண்டேன்.",
+        "எங்கேயோ பார்த்த ஜாபகம், உன்னை நான் நேற்று முன்தினம் கனவில் கண்டேன். ",
     },
     {
       id: "Pos_Fun_0016",
-      input: "nee sonnaa, naan kandippaa varuven.",
-      expected: "நீ சொன்னா, நான் கண்டிப்பா வருவேன்.",
+      input: "nee sonnaa, naan kandippaa varuven. ",
+      expected: "நீ சொன்னா, நான் கண்டிப்பா வருவேன். ",
     },
     {
       id: "Pos_Fun_0017",
-      input: "avan seekiram thoonginaan, yenna romba kalaippaa irundhuchu.",
-      expected: "அவன் சீக்கிரம் தூங்கினான், என்ன ரொம்ப களைப்பா இருந்துச்சு.",
+      input: "avan seekiram thoonginaan, yenna romba kalaippaa irundhuchu. ",
+      expected: "அவன் சீக்கிரம் தூங்கினான், என்ன ரொம்ப களைப்பா இருந்துச்சு. ",
     },
     {
       id: "Pos_Fun_0021",
-      input: "avan ellaaraiyum vida romba nallavan.",
-      expected: "அவன் எல்லாரையும் விட ரொம்ப நல்லவன்.",
+      input: "avan ellaaraiyum vida romba nallavan. ",
+      expected: "அவன் எல்லாரையும் விட ரொம்ப நல்லவன். ",
     },
     {
       id: "Pos_Fun_0022",
-      input: "naanga maduraila irunthu kandy pogalaamnu yosichom.",
-      expected: "நாங்க மதுரைல இருந்து கண்டி போகலாம்னு யோசிச்சோம்.",
+      input: "naanga maduraila irunthu kandy pogalaamnu yosichom. ",
+      expected: "நாங்க மதுரைல இருந்து கண்டி போகலாம்னு யோசிச்சோம். ",
     },
     {
       id: "Pos_Fun_0023",
       input:
-        "avan sandhoshamaa sirichaan; ellaarum atha paathu magizhndhaanga!",
-      expected: "அவன் சந்தோஷமா சிரிச்சான்; எல்லாரும் அத பாத்து மகிழ்ந்தாங்க!",
+        "avan sandhoshamaa sirichaan; ellaarum atha paathu magizhndhaanga! ",
+      expected: "அவன் சந்தோஷமா சிரிச்சான்; எல்லாரும் அத பாத்து மகிழ்ந்தாங்க! ",
     },
     {
       id: "Neg_Fun_0003",
@@ -189,11 +194,15 @@ test("Tamil Transliteration - Sequential Tests", async ({ page }) => {
     {
       id: "Pos_Fun_0018",
       input:
-        "innaiku kaalaila naan ezhundhu kulichu saapittu veetla irundhen, " +
-        "appuram konjam neram oivu eduthen.",
+        "innaiku kaalaila naan ezhundhu kulichu saapittu veetla amaidhiya irundhen daa " +
+        " amma samayal senju soru saapida koopta naan sandhoshama ukkanthu saapten " +
+        " pinadi konjam neram puthagam padichu thookam varalanaala nadanthu vandhen " +
+        " maalaila nanban vandhu pesi sirichom ellarum serndhu santhosham anubavithom ",
       expected:
-        "இன்னைக்கு காலைல நான் எழுந்து குளிச்சு சாப்பிட்டு வீட்ல இருந்தேன், " +
-        "அப்புறம் கொஞ்சம் நேரம் ஓய்வு எடுத்தேன்.",
+        "இன்னைக்கு காலைல நான் எழுந்து குளிச்சு சாப்பிட்டு வீட்ல அமைதியா இருந்தேன் டா " +
+        "அம்மா சமையல் செஞ்சு சோறு சாப்பிட கூப்பிட நான் சந்தோஷமா உக்காந்து சாப்பிட்டேன் " +
+        "பின்னாடி கொஞ்சம் நேரம் புத்தகம் படிச்சு தூக்கம் வரலானால நடந்து வந்தேன் " +
+        "மாலைல நண்பன் வந்து பேசி சிரிச்சோம் எல்லாரும் சேர்ந்து சந்தோசம் அனுபவித்தோம் ",
     },
     {
       id: "Pos_Fun_0024",
